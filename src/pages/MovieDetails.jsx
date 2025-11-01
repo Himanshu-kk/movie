@@ -8,6 +8,7 @@ import { BASE_URL } from "../config";
 import SeoText from "../components/SeoText";
 import Footer from "../components/Footer";
 import Experiance from "../components/Experiance";
+import MovieWatch from "../components/MovieWatct";
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -262,6 +263,7 @@ const MovieDetails = () => {
 </button>
 
 
+
                 // <button
                 //   onClick={() => navigate(`/watch/${id}`)}
                 //   className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition-all duration-300 hover:scale-110 hover:shadow-green-400/50"
@@ -272,8 +274,9 @@ const MovieDetails = () => {
             </div>
           </div>
         )}
-
-        {watchLink && (
+      {/* 🎥 Fullscreen Watch Player */}
+{watchLink && <MovieWatch watchLink={watchLink} onClose={() => setWatchLink(null)} />}
+        {/* {watchLink && (
   <div className="w-full h-screen flex justify-center items-center bg-black mt-10">
     <iframe
       src={watchLink}
@@ -287,7 +290,7 @@ const MovieDetails = () => {
       title="MoviesFear Watch Player"
     ></iframe>
   </div>
-)}
+)} */}
 
 
         {/* 🎬 Related Movies */}
