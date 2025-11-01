@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import MovieCard from "../components/MovieCard";
 import axios from "axios";
 import { BASE_URL } from "../config";
+import SeoText from "../components/SeoText";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -150,6 +152,8 @@ const Home = () => {
           </div>
         )}
       </div>
+      <div><SeoText /></div>
+      <Footer />
     </div>
   );
 };

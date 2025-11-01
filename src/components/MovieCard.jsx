@@ -12,9 +12,9 @@ const MovieCard = ({ movie }) => {
       <img
         src={movie.mainPoster || movie.imgSample?.[0] || "/placeholder.png"}
         alt={movie.title}
-        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+        className="w-full h-82 object-cover transition-transform duration-300 group-hover:scale-105"
       />
-      <div className="absolute bottom-0 bg-black/70 text-white w-full p-2 text-center text-sm">
+      <div className="absolut bottom-0 bg-black/70 text-white w-full p-2 text-center text-sm border-amber-100">
         {movie.title}
       </div>
     </div>
