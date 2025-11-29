@@ -399,8 +399,9 @@ const MovieDetails = () => {
         </div>
       
         <Footer />
+        <AddSection movieId={id} />
       </div>
-      <AddSection movieId={id} />
+      
     </div>
   );
 };
