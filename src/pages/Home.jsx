@@ -83,18 +83,17 @@ const Home = () => {
       {/* Main Content (pushed below fixed navbar) */}
       <div className="pt-20">
         {/* Latest 10 Movies Horizontal Scroll */}
-        {/* Latest 10 Movies Horizontal Scroll - FINAL FIXED */}
+        {/* Latest 10 Movies Horizontal Scroll - 100% WORKING & FIXED */}
 <div className="overflow-x-auto flex gap-5 py-6 px-5 bg-black scrollbar-hidden">
   {movies.slice(0, 10).map((movie) => {
-    // Safe image picker
-    let poster = "/placeholder.png"; // default
+    let poster = "https://via.placeholder.com/400x600/111827/ffffff?text=No+Image";
 
     if (movie.mainPoster && movie.mainPoster.trim() !== "") {
       poster = movie.mainPoster;
     } else if (movie.imgSample) {
       if (Array.isArray(movie.imgSample) && movie.imgSample.length > 0) {
         poster = movie.imgSample[0];
-      } else if (typeof movie.imgSample === "string") {
+      } else if (typeof movie.imgSample === "string" && movie.imgSample.trim() !== "") {
         poster = movie.imgSample;
       }
     }
@@ -109,10 +108,15 @@ const Home = () => {
             e.target.src = "https://via.placeholder.com/400x600/111827/ffffff?text=No+Image";
           }}
         />
+        {/* Optional: Title neeche dikhao */}
+        <p className="text-center text-xs text-gray-400 mt-2 w-44 truncate">
+          {movie.title || "Unknown"}
+        </p>
       </div>
     );
   })}
 </div>
+{/* ↑ YEH DIV BAND HONA ZAROORI THA! */}
 
         {/* All Movies Title */}
         <h2 className="text-2xl font-bold px-5 py-6 flex items-center gap-2">
