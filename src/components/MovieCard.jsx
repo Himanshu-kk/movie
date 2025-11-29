@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
   return (
     <div
       onClick={() => navigate(`/movie/${movie._id}`)}
-      className="relative cursor-pointer rounded-md overflow-hidden group"
+      className="relative cursor-pointer overflow-hidden group"
     >
       <img
         src={movie.mainPoster || movie.imgSample?.[0] || "/placeholder.png"}
