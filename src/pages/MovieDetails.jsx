@@ -371,9 +371,9 @@ const MovieDetails = () => {
                 <p className="text-lg font-bold">{mood.label}</p>
 
                 {/* Count Badge */}
-                <div className="absolute -top-3 -right-3 bg-yellow-500 text-black font-bold text-sm rounded-full w-10 h-10 flex items-center shadow-xl border-2 border-black">
+                {/* <div className="absolute -top-3 -right-3 bg-yellow-500 text-black font-bold text-sm rounded-full w-10 h-10 flex items-center shadow-xl border-2 border-black">
                   {moodCounts[index]}
-                </div>
+                </div> */}
               </button>
             ))}
           </div>
