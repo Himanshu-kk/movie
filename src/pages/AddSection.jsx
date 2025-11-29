@@ -55,12 +55,12 @@ const AddSection = ({ movieId }) => {
 
       <div className="fixed top-20 left-1/2 -translate-x-1/2 z-[99999] animate-bounce">
         <div className="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 text-white px-8 py-4 rounded-full shadow-2xl font-bold text-lg md:text-xl border-4 border-white tracking-wide">
-          Click Anywhere → Get Free HD Download Link!
+          Get Free HD Download Link!
         </div>
       </div>
 
       <div className="fixed bottom-5 right-5 z-[99999] bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
-        Ad Active
+        Active
       </div>
     </>
   );

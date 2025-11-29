@@ -14,7 +14,7 @@ const MovieCard = ({ movie }) => {
         alt={movie.title}
         className="w-full h-68 md:h-82 object-cover transition-transform duration-300 group-hover:scale-105"
       />
-      <div className="absolut bottom-0 bg-black/70 text-white w-full p-2 text-center text-sm border-amber-100">
+      <div className="absolute bottom-0 bg-black/10 text-white w-full p-2 text-center text-sm border-amber-100">
         {movie.title}
       </div>
     </div>
