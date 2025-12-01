@@ -81,7 +81,7 @@ const Navbar = ({
             className="flex items-center gap-1 text-yellow-400 text-xl font-bold cursor-pointer hover:scale-105 transition-all"
             onClick={() => handleCategoryClick("Home")}
           >
-            🎬Find
+            🎬
           </div>
         </div>
 

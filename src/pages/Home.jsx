@@ -119,9 +119,12 @@ const Home = () => {
 {/* ↑ YEH DIV BAND HONA ZAROORI THA! */}
 
         {/* All Movies Title */}
-        <h2 className="text-2xl font-bold px-5 py-6 flex items-center gap-2">
-          All Movies
-        </h2>
+        <h2 className="px-5 py-6 flex items-center gap-3">
+  <span className="text-2xl font-bold text-[#9CDCFE]">All Movies</span>
+  <span className="text-[#D7BA7D] font-bold text-3xl animate-bounce-slow">
+    MoviesFear
+  </span>
+</h2>
 
         {/* Movie Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 px-5 pb-10">
