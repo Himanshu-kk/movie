@@ -62,6 +62,7 @@ const AddSection = ({ movieId }) => {
       <div className="fixed bottom-5 right-5 z-[99999] bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
         Active
       </div>
+      <AddSection ye moviedetails me movieId={id} />
     </>
   );
 };
