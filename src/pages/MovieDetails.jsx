@@ -407,7 +407,7 @@ const MovieDetails = () => {
         </div>
       
         <Footer />
-        <AddSection movieId={id} />
+        
       </div>
       
     </div>
